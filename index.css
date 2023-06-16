@@ -1,0 +1,168 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: white;
+}
+
+.container{
+    padding: 30px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+}
+
+#gameboard{
+    width: 450px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.box{
+    height: 120px;
+    width: 120px;
+    font-size: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: orange;
+    border: 2px solid greenyellow;
+    /* opacity: 0.5; */
+}
+
+.part1{
+    display: flex;
+    flex-direction: row;
+}
+.part2{
+    display: flex;
+    flex-direction: row;
+}
+.part3{
+    display: flex;
+    flex-direction: row;
+}
+
+.box:hover
+{
+    background-color: rgb(137, 140, 140);
+}
+
+.box1::after{
+    opacity: 0.3;
+}
+
+.title{
+    color: yellow;
+    /* display: none; */
+    /* background-color: rgb(159, 40, 40) ; */
+    padding-left: 174px;
+    padding-right: 265px;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.title::first-letter
+
+#turn{
+    color: aqua;
+    /* display: none; */
+}
+
+.winner{
+    /* display: none;    */
+    /* position: absolute; */
+    /* text-align: center; */
+    color: aqua;
+    font-size: 100px;
+    margin-bottom: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.gameover{
+    position: absolute;
+    color: red;
+    text-align: center;
+    font-size: 150px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: all 5s  ease-out;
+    /* z-index: -1; */
+}
+
+
+.restart-btn{
+    background: none;
+    border: 4px solid yellowgreen;
+    font-size: 24px;
+    margin: 30px ;
+    margin-right: 110px;
+    color: aqua;
+    cursor: pointer;
+    padding: 10px 21px;
+    background-color: green;
+}   
+.restart-btn:hover{
+    padding-top: 14px; 
+    /* transition-duration: 3s;
+    transition-property: all;
+    transform-style: flat;
+    transition-timing-function: ease-in-out; */
+}
+ 
+
+
+
+
+@media only screen and (max-width:1000px) {
+    
+    .gameboard{
+        position: relative;
+        /* justify-content: center; */
+        justify-items: center;
+        align-items: center;
+    }
+    .box{
+        height: 90px;
+        width: 90px;
+        font-size: 45px;        
+    }
+    .part1{
+        margin-left: 70px;
+    }
+    .part2{
+        margin-left: 70px;
+    }
+    .part3{
+        margin-left: 70px;
+    }
+
+    .winner{
+        margin-right: 30px;
+        margin-bottom: 10px;
+        font-size: 50px;
+    }
+    .restart-btn{
+        margin-left: 90px;
+        padding: 8px 16px;
+    }
+    .restart-btn:hover{
+        font-size: 18px;
+    }
+
+    .title{
+        font-size: 18px;
+        margin-left: 50px;
+    }
+
+    .gameover{
+        font-size: 100px;
+    }
+}
